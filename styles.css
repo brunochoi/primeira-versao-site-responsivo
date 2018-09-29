@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(114, 81, 81);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+}
+
+header h2{
+    color: white;
+}
+
+.hamburguer-menu{
+    width: 50%;
+    height:30%;
+    padding:5px;
+
+    border: 1px solid white;
+    border-radius:15px;
+
+    cursor: pointer;
+}
+
+.hamburguer-menu span{
+    widows: 100%;
+    height: 2px;
+
+    margin-top: 6px;
+
+    background-color: white;
+
+
+    display: block;
+    
+}
+
+header nav{
+    display: none;
+}
+
+header nav a{
+    text-decoration: none;
+    color:white;
+
+    padding: 0 10px;
+        
+}
+.banner{
+    margin-top: 0%
+}
+
+.banner img{
+    width: 100%
+}
+
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main div img{
+    width: 100%;
+
+}
+
+main div{
+    width: 45%;
+    margin: 5px;
+
+}
+
+
+#about{
+    width: 80%;
+    margin: 5px auto;
+
+    border-top: 0.2px solid lightgrey;
+
+}
+
+#about p{
+    text-align: justify;
+}
+
+#about h2{
+    width: fit-content;
+
+    margin: 5px auto;
+
+}
+.logo-placeholder{
+    width: 40vw;
+    max-width: 300px;
+    height: 40vw;
+    max-height: 300px;
+    background-color: aquamarine;
+    border-radius: 100%;
+    margin: 5px auto;
+
+}
+
+footer{
+    background-color: blueviolet;
+    padding: 5px;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color:white;
+}
+
+@media (min-width: 500px){
+    .hamburguer-menu{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+    }
+}
+
+@media (min-width: 700px){
+    main div {
+        width:30%
+    }
+}
+@media (min-width: 830px){
+    .about-content{
+        display: flex;
+    }
+    .about-content p{
+        width: 50%;
+        margin: 0 15px;
+
+    }
+
+}
+
+@media (min-width: 960px){
+
+.banner, main{
+    max-width: 960px;
+    margin:10px auto;
+}
+
+   
+    main div{
+        width: 20%;
+    }
+}
+
